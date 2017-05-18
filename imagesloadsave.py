@@ -4,7 +4,6 @@ Created on May 18, 2017
 @author: neilagupta
 '''
 
-import numpy as np
 import cv2
 
 img = cv2.imread('Neil.png', 0)
