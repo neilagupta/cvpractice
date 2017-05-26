@@ -12,11 +12,11 @@ while(True):
     #Capture video frame by frame
     ret, frame = cap.read()
     
-    #Operations in frame occur here (colorizes frame)
+    #Operations in frame occur here (creates frame and color set to gray)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
     #Display frame
-    cv2.imshow('frame', gray)
+    cv2.imshow('frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         #End loop of capture when q is pressed
         break
